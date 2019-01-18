@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NewDag</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith:400,700|Pacifico" rel="stylesheet">
+</head>
+<body>
+<main id='app'>
+    <div id='newdagLogo'>
+        <img src="src/newdag-white.svg" alt="" srcset="src/newdag-white.svg">
+    </div>
+    <div id='mainContainer'>
+        <div id='display'>
+            <div class='display-action'>
+                <i id='setting' class='fa fa-cog setting'></i>
+            </div>
+            <div class='display-title'>
+                <span id='dateCity'></span>
+                <h2 id='city'></h2>
+                <h3 id='country'></h3>
+            </div>
+            <div class='display-degree'>
+                <p id='degree'></p>
+            </div>
+            <div class='display-input'>
+                <form action="?" method='post' id='cityField'>
+                    <input type="text" name='text' placeholder='Search City...'>
+                </form>
+            </div>
+            <div id='themeSetting'>
+                <span class='theme-btn' theme-id='default'>Default</span>
+                <span class='theme-btn' theme-id='forest'>Forest</span>
+                <span class='theme-btn' theme-id='swan-lake'>Swan Lake</span>
+                <span class='theme-btn' theme-id='night-sky'>Night sky</span>
+            </div>
+        </div>
+        <div class='content'>
+            <div class='weather'>
+                <div class='w-data'><span>Sunrise</span><span id='sunrise'></span></div>
+                <div class='w-data'><span>Sunset</span><span id='sunset'></span></div>
+                <div class='w-data'><span>Wind</span><span id='windspeed'></span></div>
+                <div class='w-data'><span>Note</span><span id='note'></span></div>
+            </div>
+            <div id='forecast'></div>
+        </div>
+    </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script src='app.js'></script>
+</body>
+</html>
