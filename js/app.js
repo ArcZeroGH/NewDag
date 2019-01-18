@@ -11,13 +11,17 @@ const sunrise = document.querySelector('#sunrise');
 const sunset = document.querySelector('#sunset');
 const searchField = document.querySelector('#cityField');
 
-var sCity = "tune";
+var sCity = "Abbott";
 var sCityID = "";
 
 /* ==============================  Search field ============================== */
 searchField.addEventListener('keyup', function(){
     var qSearch = searchField.value;
-    console.log(qSearch.length + qSearch);
+
+    if (qSearch.length >= 2){
+        var sURL = `http://gd.geobytes.com/AutoCompleteCity?callback=?&q=`+qSearch;
+        console.log(sURL);
+    }
 });
 
 /* ============================== Weather 1 day ============================== */
