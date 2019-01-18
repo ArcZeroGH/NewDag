@@ -10,7 +10,7 @@ const note = document.querySelector('#note');
 const sunrise = document.querySelector('#sunrise');
 const sunset = document.querySelector('#sunset');
 
-var sCity = "brønshøj";
+var sCity = "tune";
 var sCityID = "";
 
 /* ============================== Weather 1 day ============================== */
