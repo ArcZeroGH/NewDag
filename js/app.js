@@ -15,7 +15,10 @@ var sCity = "tune";
 var sCityID = "";
 
 /* ==============================  Search field ============================== */
-
+searchField.addEventListener('keyup', function(){
+    var qSearch = searchField.value;
+    console.log(qSearch.length + qSearch);
+});
 
 /* ============================== Weather 1 day ============================== */
 var url = `https://api.openweathermap.org/data/2.5/weather?q=${sCity}&appid=${WEATHERID}`;
